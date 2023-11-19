@@ -1,6 +1,6 @@
 import streamlit as st
 from streamlit_extras.switch_page_button import switch_page
-from app.common.components import button
+from app.common.components import green_button
                    
 
 def render():
@@ -14,8 +14,7 @@ def render():
 
     st.title("Aplicativo de Certificado de Calibração")
     st.write(text)
-    button.__style__(width_percentage=100)
-    start_button = st.button("Iniciar")
+    start_button = green_button.__style__("Iniciar")
     if start_button:
-        switch_page("Section_1")
+        switch_page("Seção_1")
 render()
